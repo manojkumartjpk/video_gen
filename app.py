@@ -24,14 +24,14 @@ class InferlessPythonModel:
         self.pipe.unet = torch.compile(self.pipe.unet, mode="reduce-overhead", fullgraph=True)
         self.pipe.vae = torch.compile(self.pipe.vae, mode="reduce-overhead", fullgraph=True)
         self.seed = 42
-        self.randomize_seed = True,
-        self.motion_bucket_id = 127,
-        self.fps_id = 6,
-        self.version = "svd_xt",
+        self.randomize_seed = True
+        self.motion_bucket_id = 127
+        self.fps_id = 6
+        self.version = "svd_xt"
         self.cond_aug = 0.02,
-        self.decoding_t = 3,  # Number of frames decoded at a time! This eats most VRAM. Reduce if necessary.
-        self.device = "cuda",
-        self.output_folder = "outputs",
+        self.decoding_t = 3
+        self.device = "cuda"
+        self.output_folder = "outputs"
 
     def infer(self,inputs):
         image_url = inputs['image_url']
