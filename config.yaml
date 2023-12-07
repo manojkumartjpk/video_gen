@@ -6,3 +6,4 @@ build:
   python_packages:
     - "git+https://github.com/huggingface/diffusers.git@refs/pull/5895/head"
     - "torch==2.0.1"
+    - "transformers==4.35.2"
