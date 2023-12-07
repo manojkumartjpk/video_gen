@@ -7,4 +7,3 @@ build:
     - "git+https://github.com/huggingface/diffusers.git@refs/pull/5895/head"
     - "torch==2.1.1"
     - "transformers==4.35.2"
-    - "diffusers==0.24.0"
