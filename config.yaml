@@ -7,7 +7,7 @@ build:
     - "libgl1-mesa-glx"
   python_packages:
     - "git+https://github.com/huggingface/diffusers.git@refs/pull/5895/head"
-    - "transformers"
+    - "transformers==4.35.2"
     - "accelerate"
     - "safetensors"
     - "opencv-python"
